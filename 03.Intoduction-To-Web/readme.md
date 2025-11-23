@@ -54,3 +54,7 @@ TCP handshake is called 3 eay handshake.
 
 - session based authentication
 - token based authentication
+
+### Resources
+
+- [DNS Resolution](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI_cOjv8MJHQH-FM-mIOX0VR0k6G4uhY9bmuN7JH8p3yAB3tyFXego7K8XLYI6)
