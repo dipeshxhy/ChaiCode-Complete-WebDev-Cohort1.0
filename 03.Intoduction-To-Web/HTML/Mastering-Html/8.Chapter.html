@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Practice</title>
+    <style>
+      input,
+      textarea {
+        width: 100%;
+        margin: 10px 0;
+        display: block;
+        padding: 5px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(225, 180, 64);
+      }
+      form {
+        background-color: #4a3304;
+        color: #fff;
+        width: 400px;
+        padding: 30px;
+        border-radius: 8px;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input
+        type="number"
+        placeholder="phone number here..."
+        name="phone"
+        required
+        minlength="10"
+        maxlength="10"
+        pattern="[0-9]{10}"
+        title="phone number must be exactly 10 digits"
+      />
+      <input
+        type="text"
+        name="password"
+        required
+        minlength="8"
+        title="password must be at least 8 characters long"
+        placeholder="password here..."
+      />
+      <textarea
+        name="comments"
+        id="comments"
+        rows="10"
+        placeholder="Type Comments..."
+      ></textarea>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
