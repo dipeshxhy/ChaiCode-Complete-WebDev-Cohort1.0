@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Profile Card</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .profile {
+        width: 100%;
+        max-width: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .profile img {
+        width: 100%;
+        object-fit: cover;
+      }
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 10px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile" data-profile="dipesh chaudhary">
+      <img src="/me.jpg" alt="Dipesh profile" />
+      <p>
+        I am full stack developer. I love to build software and always try to
+        learn the new tech and apply to solve the problem.I like to read books
+        and watch movies, play football and travel to new places.
+      </p>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="contact me"
+        required
+      />
+    </div>
+  </body>
+</html>
