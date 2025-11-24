@@ -1,3 +1,7 @@
+## LINK
+
+- [multimedia-practice-html-webpage-screenshot](./multimedia.png)
+
 ## chapter 1
 
 - tags : p
