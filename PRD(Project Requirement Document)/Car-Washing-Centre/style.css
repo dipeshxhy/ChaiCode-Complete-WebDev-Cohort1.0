@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.hero-section {
+  position: relative; /* Establishes a positioning context for the children */
+  height: 100vh; /* Makes the hero section fill the entire viewport height */
+  overflow: hidden; /* Hides video overflow for clean edges */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 2. Video Styling (The Background Layer) */
+.background-video {
+  /* Positions the video absolutely within the hero-section */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  /* Centering trick to ensure the center of the video is always visible */
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Puts the video on the bottom layer */
+}
+
+/* 3. Content Styling (The Top Layer) */
+.hero-content {
+  position: relative; /* Allows the content to stack on top */
+  z-index: 10; /* Ensures content is above the video */
+  text-align: center;
+  color: white; /* Ensure text is readable against the video */
+}
+
+/* 4. Optional: Readability Overlay */
+/* Important! To ensure text is readable regardless of video brightness */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark semi-transparent overlay */
+  z-index: 2; /* Sits between the video (z-index: 1) and content (z-index: 10) */
+}
+
+/* Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3.2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+a:hover,
+a:active {
+  color: #ff6600;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: #ff6600;
+  border-radius: 2px;
+}
+
+.btn:link,
+.btn:link {
+  display: block;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.btn:hover,
+.btn:active {
+  background-color: #e65c00;
+}
+
+/* SECTION HERO */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero-title {
+  font-size: 3.2rem;
+}
+
+.hero-title span {
+  background-color: #ff6600;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-weight: bold;
+}
+.hero-subtitle {
+  font-size: 1.8rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+  padding: 2rem;
+  background-color: #ff8b3e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.nav-link__footer:hover,
+.nav-link__footer:active {
+  color: #ffba8c;
+}
