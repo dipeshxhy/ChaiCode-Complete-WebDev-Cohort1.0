@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram | HOME</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Material Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body class="bg-black text-white">
+    <div class="instagram h-screen flex">
+      <!-- left bar -->
+      <div class="left_bar flex-1 h-full border-r border-stone-500">
+        <ul class="items p-5">
+          <li id="logo" class="mb-5 cursor-pointer">
+            <img
+              src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+              alt="instagram logo"
+              class="w-32 h-8 object-contain"
+            />
+          </li>
+
+          <li class="item flex items-center mb-4 cursor-pointer gap-3 mb-8">
+            <span class="material-icons">home</span>
+            Home
+          </li>
+          <li class="item flex items-center mb-4 cursor-pointer gap-3 mb-8">
+            <span class="material-icons">search</span>
+            Search
+          </li>
+          <li class="item flex items-center mb-4 cursor-pointer gap-3 mb-8">
+            <span class="material-icons">explore</span>
+            Explore
+          </li>
+          <li class="item flex items-center mb-4 cursor-pointer gap-3 mb-8">
+            <span class="material-icons">movie</span>
+            Reels
+          </li>
+          <li class="item flex items-center mb-4 cursor-pointer gap-3 mb-8">
+            <span class="material-icons">message</span>
+            Messages
+          </li>
+          <li class="item flex items-center mb-4 cursor-pointer gap-3 mb-8">
+            <span class="material-icons">notifications</span>
+            Notifications
+          </li>
+          <li class="item flex items-center mb-4 cursor-pointer gap-3 mb-8">
+            <span class="material-icons">add_box</span>
+            Create
+          </li>
+          <li class="item flex items-center mb-4 cursor-pointer gap-3 mb-8">
+            <span class="material-icons">person</span>
+            Profile
+          </li>
+          <li class="item flex items-center mb-4 cursor-pointer gap-3">
+            <span class="material-icons">more_horiz</span>
+            More
+          </li>
+        </ul>
+      </div>
+
+      <!-- main feed -->
+      <div class="main_feed flex-3 h-full">
+        <!-- story container -->
+        <ul class="story mt-4 flex gap-4">
+          <!-- list of story -->
+          <li class="story_item ml-3 cursor-pointer flex flex-col items-center">
+            <div
+              class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-full w-14 h-14 flex items-center justify-center"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2024/02/15/00/01/ai-generated-8574425_1280.jpg"
+                alt="story 1"
+                class="w-13 h-13 rounded-full object-cover border-2 border-stone-800"
+              />
+            </div>
+            <p class="text-sm">superman</p>
+          </li>
+
+          <li class="story_item cursor-pointer flex flex-col items-center">
+            <div
+              class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-full w-14 h-14 flex items-center justify-center"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2024/01/15/11/36/batman-8510026_1280.png"
+                alt="story 2"
+                class="w-13 h-13 rounded-full object-cover border-2 border-stone-800"
+              />
+            </div>
+            <p class="text-sm">batman</p>
+          </li>
+
+          <li class="story_item cursor-pointer flex flex-col items-center">
+            <div
+              class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-full w-14 h-14 flex items-center justify-center"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2020/10/16/23/35/goku-5660850_1280.png"
+                alt="story 1"
+                class="w-13 h-13 rounded-full object-cover border-2 border-stone-800"
+              />
+            </div>
+            <p class="text-sm">goku</p>
+          </li>
+          <li class="story_item cursor-pointer flex flex-col items-center">
+            <div
+              class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-full w-14 h-14 flex items-center justify-center"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2018/02/27/17/00/iron-man-3185967_1280.jpg"
+                alt="story 1"
+                class="w-13 h-13 rounded-full object-cover border-2 border-stone-800"
+              />
+            </div>
+            <p class="text-sm">ironman</p>
+          </li>
+          <li class="story_item cursor-pointer flex flex-col items-center">
+            <div
+              class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-full w-14 h-14 flex items-center justify-center"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2024/02/24/15/43/ai-generated-8594264_1280.jpg"
+                alt="story 1"
+                class="w-13 h-13 rounded-full object-cover border-2 border-stone-800"
+              />
+            </div>
+            <p class="text-sm">thor</p>
+          </li>
+          <li class="story_item cursor-pointer flex flex-col items-center">
+            <div
+              class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-full w-14 h-14 flex items-center justify-center"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2023/02/14/18/55/animal-7790230_1280.jpg"
+                alt="story 1"
+                class="w-13 h-13 rounded-full object-cover border-2 border-stone-800"
+              />
+            </div>
+            <p class="text-sm">kitty</p>
+          </li>
+          <li class="story_item cursor-pointer flex flex-col items-center">
+            <div
+              class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-full w-14 h-14 flex items-center justify-center"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2025/01/22/11/33/cute-9351912_1280.jpg"
+                alt="story 1"
+                class="w-13 h-13 rounded-full object-cover border-2 border-stone-800"
+              />
+            </div>
+            <p class="text-sm">family-man</p>
+          </li>
+          <li class="story_item cursor-pointer flex flex-col items-center">
+            <div
+              class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-full w-14 h-14 flex items-center justify-center"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2025/11/07/09/59/shih-tzu-9942547_1280.jpg "
+                alt="story 1"
+                class="w-13 h-13 rounded-full object-cover border-2 border-stone-800"
+              />
+            </div>
+            <p class="text-sm">shih-tzu</p>
+          </li>
+        </ul>
+
+        <!-- main-post -->
+        <div class="max-w-md mx-auto mt-6 flex-col gap-4 mb-8">
+          <!-- profile -->
+          <div class="flex items-center gap-2 mb-2">
+            <div
+              class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-full w-10 h-10 flex items-center justify-center"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2024/02/15/00/01/ai-generated-8574425_1280.jpg"
+                alt="story 1"
+                class="w-9 h-9 rounded-full object-cover border-2 border-stone-800"
+              />
+            </div>
+            <p class="text-sm font-bold">
+              coding_journey
+              <span class="text-sm font-normal">. 2h</span>
+            </p>
+          </div>
+          <!-- post-image -->
+          <div class="w-full">
+            <img
+              src="https://cdn.pixabay.com/photo/2022/02/17/20/37/dog-7019418_1280.jpg"
+              alt="post image"
+              class="w-full"
+            />
+          </div>
+          <!-- engagement -->
+          <div class="mt-6 ml-5">
+            <div>
+              <span class="material-icons mr-4 cursor-pointer"
+                >favorite_border</span
+              >
+              <span class="material-icons mr-4 cursor-pointer"
+                >chat_bubble_outline</span
+              >
+              <span class="material-icons mr-4 cursor-pointer">send</span>
+              <span class="material-icons float-right cursor-pointer"
+                >bookmark_border</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- suggestion -->
+      <div class="suggestion flex-2 h-full pt-10">
+        <div class="max-w-sm mx-auto">
+          <!-- profile view -->
+          <div class="flex items-center justify-between p-2">
+            <div class="flex items-center gap-2">
+              <!-- img -->
+              <div class="rounded-full w-12 h-12">
+                <img
+                  src="https://cdn.pixabay.com/photo/2024/02/15/00/01/ai-generated-8574425_1280.jpg"
+                  alt="story 1"
+                  class="w-12 h-12 rounded-full object-cover border-2 border-stone-800"
+                />
+              </div>
+
+              <!-- name -->
+
+              <div>
+                <p class="text-md font-bold leading-3">coding_journey</p>
+                <span class="text-sm font-normal">coding_journey</span>
+              </div>
+            </div>
+            <!-- switch -->
+            <a href="" class="text-blue-600">Switch</a>
+          </div>
+          <!-- suggestion text -->
+          <div class="flex items-center justify-between mt-6 mb-4">
+            <p>Suggestions for you</p>
+            <span href="">See All</span>
+          </div>
+          <!-- suggestion list -->
+          <div class="flex items-center justify-between p-2">
+            <div class="flex items-center gap-2">
+              <!-- img -->
+              <div class="rounded-full w-12 h-12">
+                <img
+                  src="https://cdn.pixabay.com/photo/2024/01/15/11/36/batman-8510026_1280.png"
+                  alt="suggestion 1"
+                  class="w-12 h-12 rounded-full object-cover border-2 border-stone-800"
+                />
+              </div>
+
+              <!-- name -->
+
+              <div>
+                <p class="text-md font-bold leading-3">batman</p>
+                <span class="text-sm font-normal">batman</span>
+              </div>
+            </div>
+            <!-- switch -->
+            <a href="" class="text-blue-600">follow</a>
+          </div>
+
+          <div class="flex items-center justify-between p-2">
+            <div class="flex items-center gap-2">
+              <!-- img -->
+              <div class="rounded-full w-12 h-12">
+                <img
+                  src="https://cdn.pixabay.com/photo/2018/02/27/17/00/iron-man-3185967_1280.jpg"
+                  alt="story 1"
+                  class="w-12 h-12 rounded-full object-cover border-2 border-stone-800"
+                />
+              </div>
+
+              <!-- name -->
+
+              <div>
+                <p class="text-md font-bold leading-3">ironman</p>
+                <span class="text-sm font-normal">ironman</span>
+              </div>
+            </div>
+            <!-- switch -->
+            <a href="" class="text-blue-600">follow</a>
+          </div>
+
+          <div class="flex items-center justify-between p-2">
+            <div class="flex items-center gap-2">
+              <!-- img -->
+              <div class="rounded-full w-12 h-12">
+                <img
+                  src="https://cdn.pixabay.com/photo/2024/02/24/15/43/ai-generated-8594264_1280.jpg"
+                  alt="story 1"
+                  class="w-12 h-12 rounded-full object-cover border-2 border-stone-800"
+                />
+              </div>
+
+              <!-- name -->
+
+              <div>
+                <p class="text-md font-bold leading-3">thor</p>
+                <span class="text-sm font-normal">thor</span>
+              </div>
+            </div>
+            <!-- switch -->
+            <a href="" class="text-blue-600">follow</a>
+          </div>
+          <div class="flex items-center justify-between p-2">
+            <div class="flex items-center gap-2">
+              <!-- img -->
+              <div class="rounded-full w-12 h-12">
+                <img
+                  src="https://cdn.pixabay.com/photo/2023/02/14/18/55/animal-7790230_1280.jpg"
+                  alt="story 1"
+                  class="w-12 h-12 rounded-full object-cover border-2 border-stone-800"
+                />
+              </div>
+
+              <!-- name -->
+
+              <div>
+                <p class="text-md font-bold leading-3">kitty</p>
+                <span class="text-sm font-normal">kitty</span>
+              </div>
+            </div>
+            <!-- switch -->
+            <a href="" class="text-blue-600">follow</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
