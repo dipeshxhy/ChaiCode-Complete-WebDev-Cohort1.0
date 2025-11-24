@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Practice</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th>City</th>
+        <th>Country</th>
+        <th>Population</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Tokyo</td>
+          <td>Japan</td>
+          <td>37 million</td>
+        </tr>
+        <tr>
+          <td>Delhi</td>
+          <td>India</td>
+          <td>31 million</td>
+        </tr>
+        <tr>
+          <td>Shanghai</td>
+          <td>China</td>
+          <td>27 million</td>
+        </tr>
+        <tr>
+          <td>Kathmandu</td>
+          <td>Nepal</td>
+          <td>1 million</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- create table wih caption -->
+    <table>
+      <caption>
+        Top Favorite Fruits
+      </caption>
+      <thead>
+        <th>Fruit</th>
+        <th>Color</th>
+        <th>Taste</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mango</td>
+          <td>Yellow</td>
+          <td>Sweet</td>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>Red/Green</td>
+          <td>Sweet/Tart</td>
+        </tr>
+        <tr>
+          <td>Banana</td>
+          <td>Yellow</td>
+          <td>Sweet</td>
+        </tr>
+        <tr>
+          <td>Pineapple</td>
+          <td>Brown/Yellow</td>
+          <td>Sweet/Tart</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- create nested Table  -->
+    <table border="1" collapse="collapse" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th rowspan="3">Day</th>
+          <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+          <th colspan="2">Schedule</th>
+          <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+          <th>Begin</th>
+          <th>End</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Monday</td>
+          <td rowspan="2">8:00 a.m.</td>
+          <td rowspan="2">5:00 p.m.</td>
+          <td>Introduction to XML</td>
+        </tr>
+        <tr>
+          <td>Validity:DTD and Relax : NG</td>
+        </tr>
+
+        <tr>
+          <td rowspan="3">Tuesday</td>
+          <td>8:00 a.m.</td>
+          <td>11:00 p.m.</td>
+          <td rowspan="2">Xpath</td>
+        </tr>
+
+        <tr>
+          <td>11:00 a.m.</td>
+          <td>2:00 p.m.</td>
+        </tr>
+        <tr>
+          <td>2:00 p.m.</td>
+          <td>5:00 p.m.</td>
+          <td rowspan="2">XSL Transformation</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Wednesday</td>
+          <td>8:00 a.m.</td>
+          <td>12:00 p.m.</td>
+        </tr>
+        <tr>
+          <td>1:00 p.m.</td>
+          <td>5:00 p.m.</td>
+          <td>XSL Formatting Objects</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table border="1" cellpadding="10">
+      <thead>
+        <tr>
+          <th>Product Category</th>
+          <th>Details (Nested Table)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Coffee Beans</td>
+          <td>
+            <table border="1" cellpadding="5" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Roast Level</th>
+                  <th>Origin</th>
+                  <th>Price/kg</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Medium</td>
+                  <td>Ethiopia</td>
+                  <td>$25.00</td>
+                </tr>
+                <tr>
+                  <td>Dark</td>
+                  <td>Brazil</td>
+                  <td>$22.50</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>Equipment</td>
+          <td>
+            <table border="1" cellpadding="5" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Stock</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Grinder</td>
+                  <td>15</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+
+<!-- <tr>
+          <td>Monday</td>
+          <td>9:00 AM</td>
+          <td>11:00 AM</td>
+          <td>Web Development</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>10:00 AM</td>
+          <td>12:00 PM</td>
+          <td>Data Science</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>1:00 PM</td>
+          <td>3:00 PM</td>
+          <td>Machine Learning</td>
+        </tr> -->
