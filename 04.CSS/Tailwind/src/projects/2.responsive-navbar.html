@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link href="../output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="p-4 bg-white shadow-md">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- desktop version -->
+        <div class="md:text-lg font-bold uppercase text-blue-800">Brand</div>
+        <nav>
+          <ul class="md:flex items-center md:gap-4 gap-2 text-stone-600 hidden">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+
+        <!-- mobile version -->
+        <div class="md:hidden">
+          <button
+            class="text-stone-600 focus:outline-none text-2xl"
+            onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+          >
+            &#9776;
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden py-2">
+        <ul class="flex justify-start flex-col gap-2 text-stone-600">
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
