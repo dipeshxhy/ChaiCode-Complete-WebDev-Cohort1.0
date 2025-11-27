@@ -19,3 +19,5 @@ let selectedColor = null;
 // typeof firstName; // undefined
 // typeof lastName; // object
 // typeof selectedColor; // object
+
+// Object Types
